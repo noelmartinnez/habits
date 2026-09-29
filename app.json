@@ -1,0 +1,52 @@
+{
+  "expo": {
+    "name": "Rutinas",
+    "slug": "rutinas-movil",
+    "scheme": "rutinas",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "automatic",
+    "backgroundColor": "#f3f5f7",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.rutinas.movil"
+    },
+    "android": {
+      "package": "com.rutinas.movil",
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "favicon": "./assets/favicon.png"
+    },
+    "experiments": {
+      "typedRoutes": true
+    },
+    "plugins": [
+      "expo-router",
+      "expo-sqlite",
+      "expo-audio",
+      "expo-sharing",
+      "expo-font",
+      [
+        "expo-splash-screen",
+        {
+          "image": "./assets/splash-icon.png",
+          "imageWidth": 120,
+          "backgroundColor": "#f3f5f7",
+          "dark": {
+            "backgroundColor": "#11151a"
+          }
+        }
+      ],
+      "@react-native-community/datetimepicker",
+      "expo-asset"
+    ]
+  }
+}
